@@ -8,7 +8,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
 echo "Installing packages"
-dnf install x265 mpv ffmpeg htop vim gcc gcc-c++ golang code screen tmux remmina openssh-askpass virt-manager x264 -y
+dnf install x265 mpv ffmpeg htop vim gcc gcc-c++ golang code screen tmux remmina openssh-askpass virt-manager x264 gstreamer1-plugin-openh264 -y
 
 echo "Seting up go"
 
